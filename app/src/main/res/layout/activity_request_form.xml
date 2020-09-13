@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Request_form">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#FFFCFC"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!--        tools:layout_editor_absoluteX="0dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTime"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp">
+            </TextView>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:text="Fill up the form"
+                app:fontFamily="@font/montserrat_bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/edit_back"
+                android:ems="10"
+                android:hint="Enter name"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editTextTextContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/edit_back"
+                android:ems="10"
+                android:hint="Enter your contact number"
+                android:inputType="number"
+                android:padding="8dp"
+                tools:ignore="DuplicateIds" />
+
+            <EditText
+                android:id="@+id/editTextTextPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/edit_back"
+                android:ems="10"
+                android:hint="Enter patient Name"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                tools:ignore="DuplicateIds" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/edit_back"
+                android:ems="10"
+                android:hint="What happened"
+                android:inputType="textLongMessage"
+                android:padding="8dp"
+                tools:ignore="DuplicateIds" />
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextTextLocation"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:background="@drawable/edit_back"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Location"-->
+<!--                android:inputType="textPostalAddress"-->
+<!--                android:padding="8dp"-->
+<!--                tools:ignore="DuplicateIds" />-->
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:layout_marginBottom="4dp"-->
+<!--                android:text="I agree to Terms and Conditions" />-->
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="95dp"
+                android:layout_height="39dp"
+                android:layout_gravity="right"
+                android:background="@drawable/buttonshape"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <!--            <Button-->
+<!--                android:id="@+id/sign_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:background="@drawable/btn_background"-->
+<!--                android:fontFamily="@font/montserrat_bold"-->
+<!--                android:text="Sign up"-->
+
+                android:textColor="#fff" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView5"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                android:text="You can also continue with"-->
+            <!--                app:fontFamily="@font/montserrat" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ambulance"
+        tools:layout_editor_absoluteY="29dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
